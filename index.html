@@ -13,49 +13,74 @@
 
     <style>
         .backgrounds {
-            width: 100%;
+            background: #f9f2eb;
             height: 100%;
-            position: relative;
-            background-color: #f9f2eb;
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: -1;
         }
         .background-1 {
             position: absolute;
-            top: -230px;
             right: -40px;
+            top: -230px;
             width: 800px;
         }
         .background-2 {
-            position: absolute;
             bottom: -100px;
+            position: absolute;
             right: -50px;
             width: 500px;
         }
         .background-3 {
+            left: 0px;
             position: absolute;
             top: 0px;
-            left: 0px;
-            width: 300px;
+            width: 150px;
         }
         .background-4 {
-            position: absolute;
             bottom: 0px;
+            position: absolute;
             right: 0px;
             width: 200px;
         }
         body {
-            margin: 0;
-            padding: 0;
-            overflow-x: hidden;
-            width: 100%;
-            height: 100%;
-            position: fixed;
+            background-color: #f9f2eb;
             font-family: 'Montserrat', sans-serif;
+            margin: 0;
+            overflow-x: hidden;
+            padding: 0;
         }
         .container {
-            width: 90%;
+            width: 100vw;
             height: 80vh;
-            padding: 80px;
+            padding: 80px 0px;
             text-align: center;
+        }
+        .container img {
+            border: 5px solid #444440;
+            margin-top: 70px;
+        }
+        h1 {
+            color: #444440;
+            font-size: 100px;
+            margin: 0px;
+        }
+        h2 {
+            color: #444440;
+            font-size: 80px;
+            margin: 0px;
+        }
+        h3 {
+            color: #444440;
+            font-size: 60px;
+            margin: 0px;
+        }
+        iframe {
+            border: 5px solid #444440;
+            height: 700px;
+            overflow: hidden; 
+            width: 70%; 
         }
     </style>
 </head>
@@ -70,10 +95,138 @@
     </div>
 
     <!-- Slides -->
-    <div class="container" data-aos="fade-left">
-        <h1 class="title">Hello</h1>
-        <p style="text-align: center; margin: -8px 0px; font-size: 30px"><code>@teffcode</code></p>
-        <img src="./assets/teffcode.jpg" alt="" width="200px" style="margin-top: 30px; border: 5px solid white">
-    </div>
+
+        <div class="container" data-aos="fade-left">
+            <h1>Animations</h1>
+            <h1>Recipe</h1>
+            <img src="../animations-pioneras/assets/eat.gif" alt="">
+        </div>
+        <div class="container" data-aos="fade-left">
+            <h2>animation-name</h2>
+            <img src="../animations-pioneras/assets/sugar.gif" alt="">
+        </div>
+        <div class="container" data-aos="fade-left">
+            <h3><i>The name of the <br/> @keyframes</i></h3>
+        </div>
+        <div class="container">
+            <iframe 
+                src="https://codepen.io/teffcode-the-animator/pen/zLeNYa"
+                name="CodePen Embed" 
+            >
+            </iframe>
+        </div>
+        <div class="container" data-aos="fade-left">
+            <h2>animation-duration</h2>
+            <img src="../animations-pioneras/assets/spice.gif" alt="">
+        </div>
+        <div class="container" data-aos="fade-left">
+            <h3><i>Time to complete <br/> one cycle.</i></h3>
+        </div>
+        <div class="container">
+            <iframe 
+                src="https://codepen.io/teffcode-the-animator/pen/RBvKoN"
+                name="CodePen Embed" 
+            >
+            </iframe>
+        </div>
+        <div class="container" data-aos="fade-left">
+            <h2>animation-timing-function</h2>
+            <img src="../animations-pioneras/assets/ingredient.gif" alt="">
+        </div>
+        <div class="container" data-aos="fade-left">
+            <h3><i>Acceleration curves</i></h3>
+        </div>
+        <div class="container">
+            <iframe 
+                src="https://codepen.io/teffcode-the-animator/pen/VBgPrw"
+                name="CodePen Embed" 
+            >
+            </iframe>
+        </div>
+        <div class="container" data-aos="fade-left">
+            <h2>animation-delay</h2>
+            <img src="../animations-pioneras/assets/chemical.gif" alt="">
+        </div>
+        <div class="container" data-aos="fade-left">
+            <h3><i>Time before <br/> the animation</i></h3>
+        </div>
+        <div class="container">
+            <iframe 
+                src="https://codepen.io/teffcode-the-animator/pen/KBJaeo"
+                name="CodePen Embed" 
+            >
+            </iframe>
+        </div>
+        <div class="container" data-aos="fade-left">
+            <h2>animation-direction</h2>
+            <img src="../animations-pioneras/assets/sugar.gif" alt="">
+        </div>
+        <div class="container" data-aos="fade-left">
+            <h3><i>Direction of <br/> the animation</i></h3>
+        </div>
+        <div class="container">
+            <iframe 
+                src="https://codepen.io/teffcode-the-animator/pen/zLeNbQ"
+                name="CodePen Embed" 
+            >
+            </iframe>
+        </div>
+        <div class="container" data-aos="fade-left">
+            <h2>animation-iteration-count</h2>
+            <img src="../animations-pioneras/assets/spice.gif" alt="">
+        </div>
+        <div class="container" data-aos="fade-left">
+            <h3><i>The number of times the <br/> animation should be performed.</i></h3>
+        </div>
+        <div class="container">
+            <iframe 
+                src="https://codepen.io/teffcode-the-animator/pen/LBqxwp"
+                name="CodePen Embed" 
+            >
+            </iframe>
+        </div>
+        <div class="container" data-aos="fade-left">
+            <h2>animation-fill-mode</h2>
+            <img src="../animations-pioneras/assets/ingredient.gif" alt="">
+        </div>
+        <div class="container" data-aos="fade-left">
+            <h3><i>Sets which values are applied <br/> before/after the animation.</i></h3>
+        </div>
+        <div class="container">
+            <iframe 
+                src="https://codepen.io/teffcode-the-animator/pen/ajXJzb"
+                name="CodePen Embed" 
+            >
+            </iframe>
+        </div>
+        <div class="container" data-aos="fade-left">
+            <h2>animation-play-state</h2>
+            <img src="../animations-pioneras/assets/chemical.gif" alt="">
+        </div>
+        <div class="container" data-aos="fade-left">
+            <h3><i>Pause/play the animation.</i></h3>
+        </div>
+        <div class="container">
+            <iframe 
+                src="https://codepen.io/teffcode-the-animator/pen/zLeNYa"
+                name="CodePen Embed" 
+            >
+            </iframe>
+        </div>
+        <div class="container" data-aos="fade-left">
+            <h2>MIX</h2>
+            <img src="../animations-pioneras/assets/mix.gif" alt="">
+        </div>
+        <div class="container">
+            <iframe 
+                src="https://codepen.io/teffcode-the-animator/pen/wxNJay"
+                name="CodePen Embed" 
+            >
+            </iframe>
+        </div>
+        <!-- <div class="container" data-aos="fade-left">
+            <h2>animation:</h2>
+            <img src="../animations-pioneras/assets/result.jpeg" alt="">
+        </div> -->
 </body>
 </html>
